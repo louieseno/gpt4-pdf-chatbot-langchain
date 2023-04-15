@@ -137,7 +137,7 @@ export default function Home() {
                     icon = (
                       <Image
                         key={index}
-                        src="/elon-musk.png"
+                        src="/elon-musk-img.png"
                         alt="AI"
                         width="100"
                         height="100"
