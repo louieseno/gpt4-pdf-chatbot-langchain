@@ -1,9 +1,22 @@
+import { Metadata } from "next";
+import Head from "next/head";
+
 interface LayoutProps {
   children?: React.ReactNode;
 }
 
+// export const metadata:Metadata = {
+//   title: 'Amazon Chatbot Annual Report',
+//   description:'Test chatbot for amazon annual report pdf\'s'
+// }
+
 export default function Layout({ children }: LayoutProps) {
   return (
+    <>
+    <Head>
+      <title>Test Amazon Chatbot Annual Report</title>
+      <meta name="description" content="Test chatbot for amazon annual report pdf\'s"></meta>
+    </Head>
     <div className="mx-auto flex flex-col space-y-4">
       <header className="container sticky top-0 z-40 bg-white">
         <div className="h-16 border-b border-b-slate-200 py-4">
@@ -20,5 +33,6 @@ export default function Layout({ children }: LayoutProps) {
         </main>
       </div>
     </div>
+    </>
   );
 }
