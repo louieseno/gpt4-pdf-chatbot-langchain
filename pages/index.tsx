@@ -25,7 +25,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'Hi, what would you like to learn about this legal case?',
+        message: 'Hi, what would you like to analyze in Amazon\'s annual reports from 2020 - 2021?',
         type: 'apiMessage',
       },
     ],
@@ -137,10 +137,10 @@ export default function Home() {
                     icon = (
                       <Image
                         key={index}
-                        src="/bot-image.png"
+                        src="/elon-musk.png"
                         alt="AI"
-                        width="40"
-                        height="40"
+                        width="100"
+                        height="100"
                         className={styles.boticon}
                         priority
                       />
